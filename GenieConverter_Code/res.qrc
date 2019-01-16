@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="converter.png">pic/1rightarrow.png</file>
+        <file alias="export.png">pic/fileexport.png</file>
+        <file alias="fileopen.png">pic/fileopen.png</file>
+        <file alias="filesave.png">pic/filesave.png</file>
+        <file alias="help.png">pic/358-help.png</file>
+        <file alias="about.png">pic/about_kde.png</file>
+        <file alias="directory.png">pic/view_left_right.png</file>
+        <file alias="set.png">pic/exec.png</file>
+        <file alias="logo.png">pic/logo2.png</file>
+    </qresource>
+</RCC>
