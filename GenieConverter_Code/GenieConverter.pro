@@ -10,6 +10,8 @@ QT += sql
 
 QT += printsupport
 
+QT += webenginewidgets
+
 TRANSLATIONS = cn.ts
 TRANSLATIONS += en.ts
 
@@ -18,7 +20,7 @@ Release:DEFINES += QT_NO_DEBUG_OUTPUT
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = GenieConverter
+TARGET = Converter
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use

@@ -3,6 +3,8 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QMessageBox>
+#include <QTextCodec>
+#include <QFile>
 #include <QDebug>
 
 void initSql()
@@ -33,12 +35,41 @@ void initSql()
 
 }
 
+/**
+ * @brief 加载样式表
+ * @param app[QApplication]
+ */
+void loadTheme(QApplication &app)
+{
+    QFile qssFile(":/qss/main.qss");
+    if(!qssFile.open(QFile::ReadOnly))
+    {
+        qDebug() << "Loading theme failed";
+    }
+
+    QString strQss = qssFile.readAll();
+    qssFile.close();
+    app.setStyleSheet(strQss);
+}
+
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
+    QTextCodec *codec = QTextCodec::codecForName("GBK");
+
+    QString fileName;
+    if(argc > 1)
+    {
+        fileName = codec->toUnicode(argv[1]);
+    }
+
+    loadTheme(a);
+
     MainWindow w;
-    w.show();
+    w.setInitFile(fileName);
+    w.showMaximized();
 
     return a.exec();
 }

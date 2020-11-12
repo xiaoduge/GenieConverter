@@ -14,13 +14,13 @@ DStringListModel::DStringListModel(QObject *parent)
 int DStringListModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
-    return m_row;
+    return m_row - 1; //第一行为表头，去除
 }
 
 int DStringListModel::columnCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
-    return m_col;
+    return m_col - 1; //第一列为ID，去除
 }
 
 QVariant DStringListModel::data(const QModelIndex &index, int role) const
@@ -31,8 +31,8 @@ QVariant DStringListModel::data(const QModelIndex &index, int role) const
         return QVariant();
     if(role == Qt::DisplayRole)
     {
-        QStringList tmpList = m_list.at(index.row());
-        return tmpList.at(index.column());
+        QStringList tmpList = m_list.at(index.row() + 1);
+        return tmpList.at(index.column() + 1);
     }
     return QVariant();
 }
@@ -44,11 +44,10 @@ QVariant DStringListModel::headerData(int section, Qt::Orientation orientation, 
         return QVariant();
     }
     if(orientation == Qt::Horizontal)
-        return QString("%1").arg(section);
+        return QString("%1").arg(m_list[0][section + 1]);
     else
-        return QString("%1").arg(section);
+        return QString("%1").arg(m_list[section + 1][0]);
 }
-
 
 bool DStringListModel::insertRows(int row, int count, const QModelIndex &parent)
 {
@@ -71,10 +70,13 @@ void DStringListModel::setString(const QString &str)
     m_row = 0;
 
     m_str = str;
-    initDataModel();
 
+    beginResetModel();
+    initDataModel();
+    endResetModel();
 }
 
+//ce
 void DStringListModel::traverModel()
 {
     for(int i = 0; i < m_list.size(); i++)
@@ -83,7 +85,6 @@ void DStringListModel::traverModel()
         {
             qDebug() << QString("Cell(%1, %2) :").arg(i).arg(k) <<m_list.at(i).at(k);
         }
-
     }
 }
 
@@ -125,5 +126,5 @@ void DStringListModel::initDataModel()
     }
     m_col = m_list.at(0).size();
 
-    traverModel();
+//    traverModel();
 }

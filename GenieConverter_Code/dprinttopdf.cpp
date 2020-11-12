@@ -53,6 +53,8 @@ const QString DPrintToPDF::getHtml()
 
 void DPrintToPDF::toHtml(int type)
 {
+    QTime t;
+    t.start();
     m_html.clear();
     QString currentTime = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss");
     QStringList titleList = m_list.at(0);
@@ -135,5 +137,6 @@ void DPrintToPDF::toHtml(int type)
         m_html += "</tr>";
     }
     m_html += "</table>";
-    qDebug() << "Html: " << m_html;
+
+    qDebug("Time elapsed: %d ms", t.elapsed());
 }

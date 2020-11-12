@@ -4,29 +4,30 @@
 <context>
     <name>DAboutDialog</name>
     <message>
-        <location filename="daboutdialog.cpp" line="13"/>
+        <location filename="daboutdialog.cpp" line="14"/>
         <source>About</source>
         <translation>About</translation>
     </message>
     <message>
-        <location filename="daboutdialog.cpp" line="32"/>
+        <location filename="daboutdialog.cpp" line="15"/>
+        <location filename="daboutdialog.cpp" line="34"/>
         <source>Close</source>
         <translation>Close</translation>
     </message>
     <message>
-        <location filename="daboutdialog.cpp" line="51"/>
-        <source>Version: 0.1.1.181212_release</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="daboutdialog.cpp" line="52"/>
-        <source>Built on Dec 12 2018</source>
-        <translation></translation>
-    </message>
-    <message>
         <location filename="daboutdialog.cpp" line="53"/>
-        <source>Rephile</source>
-        <translation></translation>
+        <source>Version: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="daboutdialog.cpp" line="54"/>
+        <source>Built on %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="daboutdialog.cpp" line="55"/>
+        <source>RephiLe Bioscience, Ltd.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -111,149 +112,177 @@
         <translation>MainWindow</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="48"/>
+        <location filename="mainwindow.cpp" line="89"/>
         <source>Open File</source>
         <translation>Open File</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="54"/>
+        <location filename="mainwindow.cpp" line="96"/>
         <source>Ready</source>
         <translation>Ready</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="65"/>
+        <location filename="mainwindow.cpp" line="107"/>
         <source>Save</source>
         <translation>Save</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="75"/>
-        <location filename="mainwindow.cpp" line="97"/>
-        <location filename="mainwindow.cpp" line="104"/>
+        <location filename="mainwindow.cpp" line="117"/>
+        <location filename="mainwindow.cpp" line="138"/>
+        <location filename="mainwindow.cpp" line="145"/>
+        <location filename="mainwindow.cpp" line="388"/>
+        <location filename="mainwindow.cpp" line="405"/>
         <source>Waring</source>
         <translation>Warning</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="75"/>
+        <location filename="mainwindow.cpp" line="117"/>
         <source>Failed to save file</source>
         <translation>Failed to save file</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="81"/>
+        <location filename="mainwindow.cpp" line="123"/>
         <source>Saved</source>
         <translation>Saved</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="91"/>
+        <location filename="mainwindow.cpp" line="133"/>
         <source>Processing data</source>
         <translation>Processing data...</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="97"/>
+        <location filename="mainwindow.cpp" line="138"/>
         <source>No valid file selected</source>
         <translation>No valid file selected</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="104"/>
+        <location filename="mainwindow.cpp" line="145"/>
         <source>Failed to open source file</source>
         <translation>Failed to open source file</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="117"/>
+        <location filename="mainwindow.cpp" line="158"/>
         <source>Data conversion completed</source>
         <translation>Data conversion completed</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="129"/>
+        <location filename="mainwindow.cpp" line="170"/>
         <source>Save PDF</source>
         <translation>Save PDF</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="134"/>
+        <location filename="mainwindow.cpp" line="175"/>
         <source>Export completed</source>
         <translation>Export completed</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="162"/>
-        <location filename="mainwindow.cpp" line="172"/>
-        <location filename="mainwindow.cpp" line="201"/>
+        <location filename="mainwindow.cpp" line="203"/>
         <source>Converter</source>
         <translation>Converter</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="163"/>
-        <location filename="mainwindow.cpp" line="181"/>
-        <location filename="mainwindow.cpp" line="187"/>
-        <location filename="mainwindow.cpp" line="262"/>
+        <location filename="mainwindow.cpp" line="204"/>
+        <location filename="mainwindow.cpp" line="225"/>
+        <location filename="mainwindow.cpp" line="231"/>
+        <location filename="mainwindow.cpp" line="314"/>
         <source>File</source>
         <translation>File</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="164"/>
-        <location filename="mainwindow.cpp" line="188"/>
+        <location filename="mainwindow.cpp" line="205"/>
+        <location filename="mainwindow.cpp" line="232"/>
         <source>Open(&amp;O)</source>
         <translation>Open(&amp;O)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="165"/>
-        <location filename="mainwindow.cpp" line="189"/>
+        <location filename="mainwindow.cpp" line="206"/>
+        <location filename="mainwindow.cpp" line="233"/>
         <source>Save(&amp;S)</source>
         <translation>Save(&amp;S)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="167"/>
-        <location filename="mainwindow.cpp" line="194"/>
+        <location filename="mainwindow.cpp" line="211"/>
+        <location filename="mainwindow.cpp" line="242"/>
         <source>Tool</source>
         <translation>Tool</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="168"/>
-        <location filename="mainwindow.cpp" line="195"/>
+        <location filename="mainwindow.cpp" line="212"/>
+        <location filename="mainwindow.cpp" line="243"/>
         <source>Setting</source>
         <translation>Setting</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="171"/>
-        <location filename="mainwindow.cpp" line="200"/>
+        <location filename="mainwindow.cpp" line="215"/>
+        <location filename="mainwindow.cpp" line="248"/>
         <source>Operate</source>
         <translation>Operate</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="173"/>
-        <location filename="mainwindow.cpp" line="202"/>
+        <location filename="mainwindow.cpp" line="217"/>
+        <location filename="mainwindow.cpp" line="250"/>
         <source>Export</source>
         <translation>Export</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="175"/>
-        <location filename="mainwindow.cpp" line="207"/>
+        <location filename="mainwindow.cpp" line="219"/>
+        <location filename="mainwindow.cpp" line="255"/>
         <source>Window</source>
         <translation>Window</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="176"/>
-        <location filename="mainwindow.cpp" line="208"/>
+        <location filename="mainwindow.cpp" line="220"/>
+        <location filename="mainwindow.cpp" line="256"/>
         <source>Directory Window</source>
         <translation>Directory Window</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="178"/>
-        <location filename="mainwindow.cpp" line="215"/>
+        <location filename="mainwindow.cpp" line="222"/>
+        <location filename="mainwindow.cpp" line="263"/>
         <source>Help</source>
         <translation>Help</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="179"/>
-        <location filename="mainwindow.cpp" line="216"/>
+        <location filename="mainwindow.cpp" line="223"/>
+        <location filename="mainwindow.cpp" line="264"/>
         <source>About</source>
         <translation>About</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="246"/>
-        <source>&lt;a href=&quot;http://www.rephile.cn&quot; style=&quot;color:black;text-decoration:none;&quot;&gt;Rephile shanghai Bioscience&amp;Technology Co.I.td&lt;/a&gt;</source>
-        <translation></translation>
+        <location filename="mainwindow.cpp" line="208"/>
+        <location filename="mainwindow.cpp" line="235"/>
+        <source>Print</source>
+        <translation>Print</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="182"/>
+        <location filename="mainwindow.cpp" line="209"/>
+        <location filename="mainwindow.cpp" line="236"/>
+        <source>Print Preview</source>
+        <translation>Print Preview</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="216"/>
+        <location filename="mainwindow.cpp" line="249"/>
+        <source>Convert</source>
+        <translation>Convert</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="298"/>
+        <source>&lt;a href=&quot;http://www.rephile.cn&quot; style=&quot;color:black;text-decoration:none;&quot;&gt;RephiLe Bioscience, Ltd.&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="388"/>
+        <source>No data to print</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="405"/>
+        <source>No data to preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="226"/>
         <source>Welcome</source>
         <translation>Welcome</translation>
     </message>

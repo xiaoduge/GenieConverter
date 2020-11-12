@@ -1,0 +1,354 @@
+
+QWidget{
+    font-family:"微软雅黑";
+}
+
+QMainWindow{
+    background-color: #384452;
+}
+
+QMessageBox{
+    background-color: #384452;
+}
+
+DAboutDialog{
+    background-color: #384452;
+}
+
+DSetDialog{
+    background-color: #384452;
+}
+
+QDockWidget{
+    background-color: #384452;
+    border: 3px solid red;
+}
+
+QDockWidget .QWidget{
+    background-color: #384452;
+    border: 1px solid #67E3EF;
+}
+
+QDockWidget::title {
+    text-align: left; /* align the text to the left */
+    background: lightgray;
+    padding-left: 5px;
+}
+
+QMenuBar{
+    background-color:#384452;
+    color:white;
+    font-size: 12px;
+}
+
+QMenuBar:item:selected{
+    background-color:#48A4F6;
+    border-radius: 5px;
+}
+
+QMenu{
+    background-color:#38393B;
+    color:white;
+}
+
+QMenu:item:selected{
+    background-color:#48484A;
+}
+
+QPushButton{
+    border: none;
+    width: 120px;
+    height: 35px;
+    min-width:80px;
+    border-radius: 12px;
+    background-color: #67E3EF;
+    color: #384452;
+    font-weight:bold;
+    padding:5px 20px 5px 20px;
+    margin: 10px 20px 10px 20px;
+}
+
+QDockWidget QPushButton{
+    width: 60px;
+    height: 30px;
+    min-width:60px;
+    border-radius: 12px;
+    background-color: #67E3EF;
+    color: #384452;
+    /* font-weight:bold; */
+    padding:5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+QPushButton:hover{
+    background-color: #48A4F6;
+}
+
+QPushButton:pressed{
+    background-color: #2F95F0;
+}
+
+QLineEdit{
+    font-size: 24px;
+    height: 40px;
+    min-width:150px;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right:5px;
+    background-color: #48484A;
+    color: white;
+    qproperty-alignment: AlignHCenter;  /* 文字居中 */
+}
+
+QLabel{
+    font-size: 12px;
+    color: white;
+    margin-right: 10px;
+}
+
+QLabel#statuslab{
+    margin-right: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-style:italic;
+}
+
+QStatusBar{
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+    border-top: 1px solid gray;
+}
+
+/* 无数据部分表头 */
+QHeaderView{
+    border: none;
+    border-bottom: 3px solid #67E3EF;
+    background: rgb(57, 58, 60);
+    min-height: 40px;
+}
+
+/* 有数据部分水平表头 */
+QHeaderView::section:horizontal {
+    border: none;
+    color: white;
+    background: transparent;
+/*    padding-left: 5px;*/
+}
+/* 有数据部分垂直表头 */
+QHeaderView::section:vertical {
+    border: none;
+    color: white;
+    background: transparent;
+    padding-left: 5px;
+}
+/* 有数据部分表格角落按钮 */
+QTableCornerButton:section{
+    background: #393A3C;
+    border:1px solid #777777;
+}
+
+QTreeView,QListView,QTableView,QSplitter::handle,QTreeView::branch{
+/*    background:#ff0000;*/
+}
+
+QHeaderView::section:horizontal:hover {
+    background: #67E3EF;
+}
+
+QHeaderView::section:horizontal:pressed {
+    background: rgb(0, 180, 255);
+}
+
+QHeaderView::up-arrow {
+    width: 13px;
+    height: 11px;
+    padding-right: 5px;
+    image: url(:/Black/topArrow);
+    subcontrol-position: center right;
+}
+
+QHeaderView::up-arrow:hover, QHeaderView::up-arrow:pressed {
+    image: url(:/Black/topArrowHover);
+}
+
+QHeaderView::down-arrow {
+    width: 13px;
+    height: 11px;
+    padding-right: 5px;
+    image: url(:/Black/bottomArrow);
+    subcontrol-position: center right;
+}
+QHeaderView::down-arrow:hover, QHeaderView::down-arrow:pressed {
+    image: url(:/Black/bottomArrowHover);
+}
+
+/**********表格**********/
+/*无数据部分内容样式*/
+QTableView {
+    border: 1px solid rgb(45, 45, 45);
+    background: rgb(57, 58, 60);
+    gridline-color: rgb(60, 60, 60);/* 表格数据部分网格线 */
+}
+
+/*有数据部分内容样式*/
+QTableView::item {
+    padding-left: 5px;
+    padding-right: 5px;
+    background: rgb(72, 72, 74);
+    color: white;
+
+}
+
+QTableView::item:selected {
+    background: rgba(255, 255, 255, 40);
+}
+
+QTableView::item:selected:!active {
+    color: white;
+}
+
+QTableView::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+/**********滚动条-水平**********/
+QScrollBar:horizontal {
+    height: 20px;
+    background: transparent;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+QScrollBar::handle:horizontal {
+    height: 20px;
+    min-width: 30px;
+    background: rgb(68, 69, 73);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: rgb(80, 80, 80);
+}
+
+QScrollBar::sub-line:horizontal {
+    width: 15px;
+    background: transparent;
+    image: url(:/Black/arrowLeft);
+    subcontrol-position: left;
+}
+
+QScrollBar::add-line:horizontal {
+    width: 15px;
+    background: transparent;
+    image: url(:/Black/arrowRight);
+    subcontrol-position: right;
+}
+
+QScrollBar::sub-line:horizontal:hover {
+    background: rgb(68, 69, 73);
+}
+
+QScrollBar::add-line:horizontal:hover {
+    background: rgb(68, 69, 73);
+}
+
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal {
+    background: transparent;
+}
+
+/**********滚动条-垂直**********/
+QScrollBar:vertical {
+        width: 20px;
+        background: transparent;
+        margin-left: 3px;
+        margin-right: 3px;
+}
+QScrollBar::handle:vertical {
+        width: 20px;
+        min-height: 30px;
+        background: rgb(68, 69, 73);
+        margin-top: 15px;
+        margin-bottom: 15px;
+}
+QScrollBar::handle:vertical:hover {
+        background: rgb(80, 80, 80);
+}
+QScrollBar::sub-line:vertical {
+    height: 15px;
+    background: transparent;
+    image: url(:/Black/arrowTop);
+    subcontrol-position: top;
+}
+QScrollBar::add-line:vertical {
+    height: 15px;
+    background: transparent;
+    image: url(:/Black/arrowBottom);
+    subcontrol-position: bottom;
+}
+QScrollBar::sub-line:vertical:hover {
+    background: rgb(68, 69, 73);
+}
+QScrollBar::add-line:vertical:hover {
+    background: rgb(68, 69, 73);
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+QScrollBar#verticalScrollBar:vertical {
+    margin-top: 30px;
+}
+
+QListWidget{
+    background-color: #384452;
+    color: white;
+    alternate-background-color: yellow;
+}
+
+QListWidget {
+    show-decoration-selected: 1; /* make the selection span the entire width of the view */
+    font-size: 18px;
+}
+
+QListView::item{
+    height: 40px;
+}
+
+QListView::item:alternate {
+    background: #EEEEEE;
+}
+
+QListView::item:selected {
+    border: none;
+    background-color: #67E3EF;
+    color: #384452;
+}
+
+QListView::item:selected:active {
+    border: none;
+    background-color: #67E3EF;
+    color: #384452;
+}
+
+QListView::item:selected:!active {
+  background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                              stop: 0 #ABAFE5, stop: 1 #8588B2);
+}
+
+QListView::item:hover {
+    background-color: #48A4F6;
+}
+
+QCheckBox {
+    color: white;
+    font-size: 18px;
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 24px;
+    height: 24px;
+}

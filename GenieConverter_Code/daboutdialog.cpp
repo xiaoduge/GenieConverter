@@ -1,4 +1,5 @@
 #include "daboutdialog.h"
+#include "mainwindow.h"
 #include <QLabel>
 #include <QPushButton>
 
@@ -49,8 +50,8 @@ void DAboutDialog::initUI()
 
 void DAboutDialog::buildTranslation()
 {
-    m_pLabel[LAB_VERSION]->setText(tr("Version: 0.1.1.181212_release"));
-    m_pLabel[LAB_BUILTTIME]->setText(tr("Built on Dec 12 2018"));
+    m_pLabel[LAB_VERSION]->setText(tr("Version: %1").arg(version));
+    m_pLabel[LAB_BUILTTIME]->setText(tr("Built on %1").arg(builtTime));
     m_pLabel[LAB_AUTHOR]->setText(tr("RephiLe Bioscience, Ltd."));
 
 }
